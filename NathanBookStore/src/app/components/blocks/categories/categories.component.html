@@ -1,0 +1,13 @@
+ <div class="card">
+   <h5 class="card-header">Categories</h5>
+   <div class="card-body">
+     <ul class="list-group">
+       <li *ngFor="let cate of arrCate" class="list-group-item d-flex justify-content-between align-items-center">
+        <a class="nav-link" routerLink="/cate">
+          {{ cate.name }}
+        </a> 
+         <span class="badge badge-primary badge-pill">{{ cate.Books_id.length}}</span>
+       </li>
+     </ul>
+   </div>
+ </div>
